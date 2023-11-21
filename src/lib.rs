@@ -1,3 +1,5 @@
+//! Returns `OsRng` with `getrandom`, or a `CryptoRng` which panics without `getrandom`.
+
 #![no_std]
 
 /// Re-export rand_core types to simplify dependences
