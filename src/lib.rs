@@ -3,7 +3,7 @@
 #![no_std]
 
 /// Re-export rand_core types to simplify dependences
-pub use rand_core::{RngCore,CryptoRng,CryptoRngCore,SeedableRng};
+pub use rand_core::{self,RngCore,CryptoRng,CryptoRngCore,SeedableRng};
 
 
 #[cfg(all( feature = "getrandom", not(feature = "std") ))]
