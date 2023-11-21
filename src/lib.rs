@@ -1,3 +1,4 @@
+#![no_std]
 
 /// Re-export rand_core types to simplify dependences
 pub use rand_core::{RngCore,CryptoRng,CryptoRngCore,SeedableRng};
