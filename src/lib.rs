@@ -1,6 +1,6 @@
 //! Returns `OsRng` with `getrandom`, or a `CryptoRng` which panics without `getrandom`.
 
-#![no_std]
+#![cfg_attr(not(feature = "std"), no_std)]
 
 /// Re-export rand_core types to simplify dependences
 pub use rand_core::{self,RngCore,CryptoRng,CryptoRngCore,SeedableRng};
